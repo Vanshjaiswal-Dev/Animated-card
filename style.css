@@ -1,0 +1,120 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background video styling */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.profile-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.4);
+  transition: ;
+}
+
+
+.profile-header {
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* .avatar:hover {
+  transform: rotate(2deg) scale(1.05);
+} */
+
+
+.profile-card h2 {
+  margin: 5px 0;
+  font-size: 24px;
+  color: #00ffff;
+}
+
+.profile-card h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #fca6ff;
+}
+
+.bio {
+  font-size: 15px;
+  margin: 20px 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0 10px;
+}
+
+
+.info {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 15px;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 50px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 2rem;
+}
+.info p:hover {
+  color: #b8f6f6;
+  cursor: pointer;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: cyan;
+}
